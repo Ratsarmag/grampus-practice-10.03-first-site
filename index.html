@@ -6,6 +6,9 @@
     <title>Откачка септика</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="assets/Favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
   </head>
   <body>
     <header>
@@ -53,7 +56,7 @@
             Для современного мира граница обучения кадров не оставляет шанса для
             как самодостаточных, так и внешне зависимых концептуальных решений.
           </p>
-          <button class="button h4 white-color-2">Оставить заявку</button>
+          <button data-fancybox href="#hidden" class="button h4 white-color-2">Оставить заявку</button>
         </div>
       </section>
       <section class="advantages-section" id="advantages-section">
@@ -106,7 +109,7 @@
       <section class="services-section" id="services-section">
         <p class="h1">Услуги нашей компании</p>
         <div class="services-block">
-          <div class="services-card">
+          <div data-fancybox href="#hidden" class="services-card">
             <img src="assets/services-1.png" alt="services-1" />
             <div class="services-card-text">
               <p class="h3 title-color">Откачка, чистка и ремонт септиков</p>
@@ -126,7 +129,7 @@
               </div>
             </div>
           </div>
-          <div class="services-card">
+          <div data-fancybox href="#hidden" class="services-card">
             <img src="assets/services-2.png" alt="services-1" />
             <div class="services-card-text">
               <p class="h3 title-color">Откачка выгребных ям</p>
@@ -146,7 +149,7 @@
               </div>
             </div>
           </div>
-          <div class="services-card">
+          <div data-fancybox href="#hidden" class="services-card">
             <img src="assets/services-3.png" alt="services-1" />
             <div class="services-card-text">
               <p class="h3 title-color">Ассенизаторская машина</p>
@@ -221,7 +224,7 @@
               разумеется, объективно рассмотрены соответствующими инстанциями. А
               ещё сделанные на базе.
             </p>
-            <button class="button h4 white-color-2">Оставить заявку</button>
+            <button data-fancybox href="#hidden" class="button h4 white-color-2">Оставить заявку</button>
           </div>
           <img src="assets/discount-image.png" alt="discount-image" />
         </div>
@@ -316,7 +319,7 @@
                 <p class="h3 title-color">Итого</p>
                 <p class="h4 second-title-color">9000 руб.</p>
               </div>
-              <button class="button h4 white-color-2">Оставить заявку</button>
+              <button data-fancybox href="#hidden" class="button h4 white-color-2">Оставить заявку</button>
             </div>
           </div>
         </div>
@@ -488,6 +491,24 @@
           </div>
         </div>
       </footer>
+      <div class="hidden" id="hidden">
+        <div class="hidden-content">
+          <div class="hidden-title">
+            <p class="h3 title-color">Форма связи</p>
+            <p class="h3 second-title-color">Мы перезвоним вам в ближайшее время</p>
+          </div>
+          <div class="hidden-request">
+            <p class="h5 second-title-color">Телефон</p>
+            <input
+              type="text"
+              class="h4 second-title-color"
+              placeholder="+7 (___) ___-__-__"
+            />
+          </div>
+          <button class="button h4 white-color-2">Отправить</button>
+        </div>
+        </p>
+      </div>
     </main>
     <script src="script.js" defer></script>
   </body>
