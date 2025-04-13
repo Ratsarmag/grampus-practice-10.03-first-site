@@ -168,6 +168,7 @@ ul a {
   background-color: #0074d9;
   padding: 20px 30px;
   border-radius: 5px;
+  border: none;
 }
 
 .button:hover,
